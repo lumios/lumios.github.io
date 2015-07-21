@@ -1,0 +1,31 @@
+<svg id="Layer_1" style="enable-background:new 0 0 512 512" xmlns="http://www.w3.org/2000/svg" xml:space="preserve" viewBox="0 0 512 512" version="1.1" y="0px" x="0px" xmlns:xlink="http://www.w3.org/1999/xlink">
+<style type="text/css">.st0{fill:#87D4ED;}.st1{fill:none;stroke:#FFFFFF;stroke-width:15;stroke-miterlimit:10;}.st2{clip-path:url(#XMLID_3_);}.st3{fill:none;stroke:#FFFFFF;stroke-width:13;stroke-miterlimit:10;}</style>
+<g id="XMLID_1_">
+  <circle id="XMLID_19_" cy="256" cx="256" r="236.4" class="st0"/>
+  <g id="XMLID_13_">
+    <image id="XMLID_18_" opacity=".1" xlink:href="" transform="matrix(.24 0 0 .24 7.0714 7.0714)" height="2133" width="2133"/>
+    <circle id="XMLID_17_" cy="256" cx="256" r="236.4" class="st1"/>
+  </g>
+</g>
+<g id="g10" transform="matrix(1.25,0,0,-1.25,0,47.5)">
+  <g id="g12">
+    <g id="XMLID_4_">
+      <defs>
+        <rect id="XMLID_5_" y="-325.2" x="55.2" height="299.3" width="299.3"/>
+      </defs>
+      <clipPath id="XMLID_3_">
+        <use xlink:href="#XMLID_5_"/>
+      </clipPath>
+      <g id="g14" class="st2">
+        <g id="g20" transform="translate(30 25.94)">
+          <path id="path22_2_" d="m137-245.6c0 37.8-31.5 47.3-31.5 87.8 0 38 33.3 68.8 69.8 68.8s68.8-30.8 68.8-68.8" class="st3"/>
+          <path id="path22_1_" d="m244.1-157.8c0-40.6-31.5-50-31.5-87.8" class="st3"/>
+        </g>
+        <g id="g32" transform="translate(25,6)">
+          <path id="path34" d="m217.6-263.5c0-7-5.6-12.6-12.6-12.6h-50.4c-7 0-12.6 5.6-12.6 12.6v37.8h75.6v-37.8z" class="st3"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</g>
+</svg>

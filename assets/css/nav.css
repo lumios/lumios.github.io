@@ -1,0 +1,46 @@
+.tags {
+	position: absolute;
+	top: 55%;
+	left: 55%;
+	height: auto;
+	width: auto;
+}
+
+.hover-tag {
+	visibility: visible;
+	position: absolute;
+	z-index: 5;
+	width: 10px;
+	height: 40px;
+	cursor: pointer;
+}
+
+.tag {
+	position: relative;
+	z-index: -1;
+	display: block;
+	margin-bottom: 10px;
+	height: 40px;
+	width: 10px;
+	background-color: #fff;
+	text-align: right;
+	-webkit-box-shadow: 5px 5px 10px 0px rgba(34,34,34,0.5);
+	-moz-box-shadow: 5px 5px 10px 0px rgba(34,34,34,0.5);
+	box-shadow: 5px 5px 10px 0px rgba(34,34,34,0.5);
+	transition: width .7s;
+}
+
+.tag i {
+	position: absolute;
+	top: 50%;
+	right: 10px;
+	transform: translateY(-50%);
+}
+
+div.tag.active, div.hover-tag.active {
+	width: 150px;
+}
+
+div.tag.select, div.hover-tag.select {
+	width: 180px;
+}

@@ -1,6 +1,6 @@
 .tags {
 	position: absolute;
-	top: 55%;
+	top: 30%;
 	left: 55%;
 	height: auto;
 	width: auto;
@@ -24,9 +24,9 @@
 	width: 10px;
 	background-color: #fff;
 	text-align: right;
-	-webkit-box-shadow: 5px 5px 10px 0px rgba(34,34,34,0.5);
-	-moz-box-shadow: 5px 5px 10px 0px rgba(34,34,34,0.5);
-	box-shadow: 5px 5px 10px 0px rgba(34,34,34,0.5);
+	-webkit-box-shadow:5px 5px 10px 0 rgba(0,0,0,0.15);
+	-moz-box-shadow:5px 5px 10px 0 rgba(0,0,0,0.15);
+	box-shadow:5px 5px 10px 0 rgba(0,0,0,0.15);
 	transition: width .7s;
 }
 

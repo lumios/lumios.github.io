@@ -23,6 +23,11 @@ $(document).ready(function() {
 	});
 
 	$(".tag-chat").click(function() {
-		
+		$(".center").animate({
+			left: 0,
+			width: "200px"
+		}, 1000, "swing");
+
+		$(".tag").removeClass("select active");
 	});
 });

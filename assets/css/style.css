@@ -46,3 +46,80 @@ body {
     background: -o-linear-gradient(top, #edece6, #fff);
     background: linear-gradient(top, #edece6, #fff)
 }
+
+.gh-widget {
+    z-index: 3;
+    position: absolute;
+    width: 40%;
+    max-height: 500px;
+    right: 50px;
+    top: 100px;
+    background: #fff;
+    border-radius: 5px;
+    margin-top: -100%;
+    transition: margin 1s;
+    padding-bottom: 10px;
+}
+
+.gh-widget.visible {
+    margin-top: 0;
+}
+
+hr {
+    margin: 10px 0 0 0;
+}
+
+.gh-repo {
+    margin: 0;
+    border-bottom: 1px solid #ededed;
+    padding: 5px 10px;
+    transition: padding .25s;
+}
+
+.gh-repo:hover {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.gh-repo a, .gh-repo a:visited, .gh-repo a:active {
+    text-decoration: none;
+    color: #525252;
+    outline: 0;
+    border: 0;
+}
+
+.gh-repo h2 {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto' ,sans-serif;
+    font-size: 20px;
+    text-align: left;
+}
+
+.gh-repo p {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    text-align: left;
+}
+
+.title-gh {
+    font-family: 'Roboto', sans-serif;
+    font-size: 36px;
+    text-align: center;
+}
+
+.home {
+    cursor: pointer;
+    margin: -32px 0 0 5px;
+    transition: margin .7s, color .25s;
+}
+
+.home:hover {
+    color: rgb(135,212,237);
+}
+
+.home.fade {
+    margin-top: 5px;
+}

@@ -1,0 +1,47 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto:300);
+
+body {
+    background: #FAFAFA;
+}
+
+.logo {
+    transition: all .15s ease-in-out;
+    -webkit-box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.15);
+    box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.15);
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+    background: #fff;
+    border: 8px solid #fff;
+}
+
+.center {
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+    position: absolute;
+    min-width: 220px;
+    width: 100%;
+    left: 50%;
+    top: 50%;
+}
+
+#background {
+    position: fixed;
+    z-index: -5;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: -webkit-gradient(linear, 50% 0, 50% 100%, color-stop(0, #edece6), color-stop(100%, #fff));
+    background: -webkit-linear-gradient(top, #edece6, #fff);
+    background: -moz-linear-gradient(top, #edece6, #fff);
+    background: -o-linear-gradient(top, #edece6, #fff);
+    background: linear-gradient(top, #edece6, #fff)
+}

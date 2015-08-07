@@ -52,6 +52,7 @@ body {
     position: absolute;
     width: 40%;
     max-height: 500px;
+    overflow: auto;
     right: 50px;
     top: 100px;
     background: #fff;

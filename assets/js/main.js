@@ -1,5 +1,7 @@
 $(document).ready(function() {
 	GH.loadRepos(document.getElementById("gh-repo-parent"));
+	
+	Lumios.socket = io("http://192.168.0.123:1350/");
 });
 
 var GH = {

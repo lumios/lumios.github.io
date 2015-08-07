@@ -13,13 +13,14 @@ var Lumios = {
 			$(".home").removeClass("fade");
 			$(".tag").removeClass("select active");
 		},
-		"open": function() {
+		"open": function(widget) {
 			$(".center").animate({
 				left: 0,
 				width: "200px"
 			}, 1000, "swing");
 
 			$(".home").addClass("fade");
+			widget.addClass("visible");
 		}
 	},
 	"menu": {
@@ -59,9 +60,7 @@ $(document).ready(function() {
 
 	$(".tag-gh").click(function() {
 		Lumios.window.reset();
-		Lumios.window.open();
-
-		$(".gh-widget").addClass("visible");
+		Lumios.window.open($(".gh-widget"));
 	});
 
 	$(".tag-chat").click(function() {

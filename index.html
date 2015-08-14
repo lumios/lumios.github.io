@@ -1,42 +1,121 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
+    <title>Lumios</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Lumios</title>
-    <meta name="author" content="kurisubrooks">
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
     <link rel="apple-touch-icon" href="assets/img/app-icon.png">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
 
     <link href="assets/css/caramel.min.css" rel="stylesheet" type="text/css">
     <link href="assets/css/style.css" rel="stylesheet" type="text/css">
-    <link href="assets/css/nav.css" rel="stylesheet" type="text/css">
+    <script src="assets/js/jquery-2.1.3.min.js"></script>
+    <script src="assets/js/caramel.js"></script>
 
-    <script src="https://cdn.socket.io/socket.io-1.3.5.js"></script>
-    <script type="text/javascript" src="assets/js/jquery-2.1.3.min.js"></script>
-    <script type="text/javascript" src="assets/js/bg.js"></script>
-    <script type="text/javascript" src="assets/js/nav.js"></script>
-    <script type="text/javascript" src="assets/js/main.js"></script>
+    <style>
+        a, a:hover, a:active, a:link, a:visited, a:focus {
+            color: #525252 !important;
+        }
+
+        .block.title {
+            padding: 60px 0;
+            background: rgb(131, 213, 237);
+            margin-bottom: 5px;
+        }
+
+        @media (max-width: 800px) {
+            .block.title {
+                padding: 25px 0;
+            }
+        }
+
+        .col-6 {
+            text-align: center;
+            margin: 35px 0;
+        }
+
+        .col-6 p {
+            font-size: 16px;
+        }
+
+        @media (max-width: 800px) {
+            .col-6 {
+                margin-top: 10px;
+                padding-bottom: 10px;
+                border-bottom: 1px solid lightgrey;
+            }
+
+            .col-6:last-child {
+                border-bottom: 0;
+                padding-bottom: 0;
+            }
+        }
+
+        .col-12 {
+            margin-bottom: 0;
+        }
+
+        footer {
+            text-align: center;
+            border-top: 1px solid lightgrey;
+            padding: 20px 0;
+            margin: 0;
+        }
+    </style>
   </head>
 <body>
-    <div class="home"><i class="fa fa-home fa-2x"></i></div>
-    <div class="center">
-        <div class="logo-holder">
-            <img src="assets/img/Block-1.svg" class="logo" width="200px" height="200px">
-            <div class="tags">
-                <div class="hover-tag tag-gh"></div>
-                <div class="tag"><i class="fa fa-github fa-2x"></i></div>
-                <div class="hover-tag tag-chat"></div>
-                <div class="tag"><i class="fa fa-comments fa-2x"></i></div>
-            </div>
+    <header class="header fixed">
+        <nav class="nav bar">
+            <ul>
+                <li class="collapse"><a href="#" class="menu"><i class="fa fa-bars"></i></a></li>
+                <div class="container">
+                <li><a href="#">Home</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="https://github.com/lumios">GitHub</a></li>
+                </div>
+            </ul>
+
+            <ul class="right">
+                <div class="container">
+                <li><a href="https://twitter.com/lumios_ga"><i class="fa fa-envelope-o fa-fw"></i></a></li>
+                </div>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="block title">
+        <div align="center">
+            <img src="assets/img/Bulb-2.svg" height=250px width=250px>
         </div>
     </div>
-    <div class="gh-widget">
-        <h1 class="title-gh">Lumios - Projects</h1>
-        <hr>
-        <div id="gh-repo-parent"></div>
+
+    <div class="container">
+        <div class="row" id="projects">
+            <div class="box col-6">
+                <a href="https://github.com/lumios/eew">
+                    <img src="assets/img/eew.svg" height=50px width=50px>
+                    <h4>EEW</h4>
+                    <p>Receive Earthquake Early Warnings<br>on your Computer. </p>
+                </a>
+            </div>
+
+            <div class="box col-6">
+                <a href="https://github.com/lumios/caramel">
+                    <img src="assets/img/caramel.svg" height=50px width=50px>
+                    <h4>Caramel</h4>
+                    <p>A Simple, Modern, Responsive Website<br>Framework</p>
+                </a>
+            </div>
+        </div>
+
+        <footer>
+            <div class="row">
+                <div class="box col-12">
+                    <p>Copyright (c) 2015 Lumios - All Rights Reserved.</p>
+                </div>
+            </div>
+        </footer>
     </div>
-    <canvas id="background">
+
 </body>
 </html>

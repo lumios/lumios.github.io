@@ -1,0 +1,48 @@
+a, a:hover, a:active, a:link, a:visited, a:focus {
+    color: #525252 !important;
+}
+
+.block.title {
+    padding: 60px 0;
+    background: rgb(131, 213, 237);
+    margin-bottom: 5px;
+}
+
+@media (max-width: 800px) {
+    .block.title {
+        padding: 25px 0;
+    }
+}
+
+.col-6 {
+    text-align: center;
+    margin: 35px 0;
+}
+
+.col-6 p {
+    font-size: 16px;
+}
+
+@media (max-width: 800px) {
+    .col-6 {
+        margin-top: 10px;
+        padding-bottom: 10px;
+        border-bottom: 1px solid lightgrey;
+    }
+
+    .col-6:last-child {
+        border-bottom: 0;
+        padding-bottom: 0;
+    }
+}
+
+.col-12 {
+    margin-bottom: 0;
+}
+
+footer {
+    text-align: center;
+    border-top: 1px solid lightgrey;
+    padding: 20px 0;
+    margin: 0;
+}

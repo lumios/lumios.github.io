@@ -1,15 +1,60 @@
 a, a:hover, a:active, a:link, a:visited, a:focus {
-    color: #525252 !important;
+    color: #525252;
+}
+
+.header .nav {
+    background: none;
+    border: none;
+}
+
+.nav a {
+    font-weight: bold;
+    color: white;
+}
+
+.nav a:hover {
+    color: white;
+    background: none !important;
+}
+
+@media (max-width: 800px) {
+    .nav a {
+        font-weight: normal;
+        color: #525252 !important;
+    }
+
+    .nav a:hover {
+        color: #525252 !important;
+    }
+
+    .nav .container {
+        padding: 0;
+    }
 }
 
 .block.title {
-    padding: 60px 0;
+    margin-top: -40px;
+    padding: 75px 0;
     background: rgb(131, 213, 237);
     margin-bottom: 5px;
+    border-bottom: 3px solid #f2f2f2;
+}
+
+@media (min-width: 1800px) {
+    .block.title {
+        padding: 120px 0;
+    }
+}
+
+@media (max-width: 1200px) {
+    .block.title {
+        padding: 75px 0;
+    }
 }
 
 @media (max-width: 800px) {
     .block.title {
+        margin-top: 0px;
         padding: 25px 0;
     }
 }

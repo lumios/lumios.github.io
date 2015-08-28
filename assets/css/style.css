@@ -16,6 +16,7 @@ a, a:hover, a:active, a:link, a:visited, a:focus {
     color: white !important;
     background: none !important;
     border-bottom: white 3px solid;
+    padding: 8px 18px 5px
 }
 
 @media (max-width: 800px) {
@@ -25,6 +26,7 @@ a, a:hover, a:active, a:link, a:visited, a:focus {
 
     .nav a {
         font-weight: normal;
+        padding: 8px 18px 5px
     }
 
     .nav a:hover {

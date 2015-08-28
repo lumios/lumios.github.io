@@ -64,13 +64,17 @@ a, a:hover, a:active, a:link, a:visited, a:focus {
 @media (max-width: 800px) {
     .block.title {
         margin-top: 0px;
-        padding: 25px 0;
+        padding: 15px 0 25px;
     }
 }
 
-.item-1, .item-2 {
+.item-1 {
     padding: 20px 0;
-    border-bottom: 1px solid lightgrey;
+    border-bottom: 3px solid #f2f2f2;
+}
+
+.item-2 {
+    padding: 20px 0;
 }
 
 .logo {
@@ -83,7 +87,7 @@ h3 {
 }
 
 @media (max-width: 800px) {
-    .item-1 {
+    .item-1, .item-2 {
         text-align: center;
     }
 
@@ -120,8 +124,11 @@ h3 {
 }
 
 footer {
+    color: white;
+    font-size: 16px;
+    padding: 15px 0 10px;
+    background: rgb(131, 213, 237);
     text-align: center;
-    /*border-top: 1px solid lightgrey;*/
-    padding: 20px 0;
     margin: 0;
+    border-top: 4px solid #f2f2f2;
 }

@@ -3,28 +3,32 @@ a, a:hover, a:active, a:link, a:visited, a:focus {
 }
 
 .header .nav {
-    background: none;
+    background: rgb(131, 213, 237);
     border: none;
 }
 
 .nav a {
     font-weight: bold;
-    color: white;
+    color: white !important;
 }
 
 .nav a:hover {
-    color: white;
+    color: white !important;
     background: none !important;
+    border-bottom: white 3px solid;
 }
 
 @media (max-width: 800px) {
+    h3 {
+        font-size: 32px;
+    }
+
     .nav a {
         font-weight: normal;
-        color: #525252 !important;
     }
 
     .nav a:hover {
-        color: #525252 !important;
+        border: none;
     }
 
     .nav .container {
@@ -33,16 +37,19 @@ a, a:hover, a:active, a:link, a:visited, a:focus {
 }
 
 .block.title {
-    margin-top: -40px;
     padding: 75px 0;
     background: rgb(131, 213, 237);
     margin-bottom: 5px;
-    border-bottom: 3px solid #f2f2f2;
+    border-bottom: 4px solid #f2f2f2;
 }
 
 @media (min-width: 1800px) {
     .block.title {
         padding: 120px 0;
+    }
+
+    .row#projects {
+        margin: 50px 0;
     }
 }
 
@@ -56,6 +63,31 @@ a, a:hover, a:active, a:link, a:visited, a:focus {
     .block.title {
         margin-top: 0px;
         padding: 25px 0;
+    }
+}
+
+.item-1, .item-2 {
+    padding: 20px 0;
+    border-bottom: 1px solid lightgrey;
+}
+
+.logo {
+    padding-top: 10px;
+}
+
+h3 {
+    font-weight: thin;
+    margin: 0 0 10px 0;
+}
+
+@media (max-width: 800px) {
+    .item-1 {
+        text-align: center;
+    }
+
+    .honcol {
+        visibility: hidden;
+        display: none;
     }
 }
 
@@ -87,7 +119,7 @@ a, a:hover, a:active, a:link, a:visited, a:focus {
 
 footer {
     text-align: center;
-    border-top: 1px solid lightgrey;
+    /*border-top: 1px solid lightgrey;*/
     padding: 20px 0;
     margin: 0;
 }

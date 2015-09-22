@@ -19,6 +19,26 @@ a, a:hover, a:active, a:link, a:visited, a:focus {
     padding: 8px 18px 5px
 }
 
+.dropdownitem:hover {
+	padding: 10px 18px 8px !important;
+	border: none !important;
+}
+
+.nav li>ul {
+	border: none !important;
+	border-radius: 5px !important;
+}
+
+.nav li>ul a {
+	color: #525252 !important;
+	font-weight: 300 !important;
+}
+
+.nav li>ul a:hover {
+	color: #525252;
+	font-weight: 300 !important;
+}
+
 @media (max-width: 800px) {
     h3 {
         font-size: 32px;
@@ -63,7 +83,7 @@ a, a:hover, a:active, a:link, a:visited, a:focus {
 
 @media (max-width: 800px) {
     .block.title {
-        margin-top: 0px;
+        margin-top: 0;
         padding: 15px 0 25px;
     }
 }
@@ -82,7 +102,7 @@ a, a:hover, a:active, a:link, a:visited, a:focus {
 }
 
 h3 {
-    font-weight: thin;
+    font-weight: 200;
     margin: 0 0 10px 0;
 }
 

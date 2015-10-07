@@ -1,70 +1,88 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Lumios</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="apple-touch-icon" href="assets/img/app-icon.png">
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
+	<head>
+	    <title>Lumios</title>
+	    <meta charset="UTF-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <link rel="apple-touch-icon" href="assets/img/app-icon.png">
+	    <link rel="icon" type="image/x-icon" href="favicon.ico">
 
-    <link href="assets/css/caramel.min.css" rel="stylesheet" type="text/css">
-    <link href="assets/css/style.css" rel="stylesheet" type="text/css">
-    <script src="assets/js/jquery-2.1.3.min.js"></script>
-    <script src="assets/js/caramel.js"></script>
-  </head>
+	    <link href="old/assets/css/caramel.min.css" rel="stylesheet" type="text/css">
+	    <script src="old/assets/js/jquery-2.1.3.min.js"></script>
+	    <script src="old/assets/js/caramel.js"></script>
+
+		<style>
+			.header .nav {
+				border: none;
+			}
+
+			.block-title {
+				background-color: rgb(131, 213, 237);
+				padding: 75px 0;
+				margin-bottom: 5px;
+			    border-bottom: 4px solid #f2f2f2;
+			}
+
+			.brand {
+				font-size: 18px;
+			}
+
+			.brand a {
+				padding: 12px 24px 0 !important;
+			}
+
+			.brand a:hover {
+				background: white !important;
+			}
+
+			.nav a {
+				padding: 14px 18px;
+			}
+
+			@media (max-width: 800px) {
+				.brand {
+					visibility: hidden;
+					display: none;
+				}
+
+			    .nav .container {
+			        padding: 0;
+			    }
+			}
+		</style>
+	</head>
 <body>
     <header class="header fixed">
         <nav class="nav bar">
             <div class="container">
                 <ul>
                     <li class="collapse"><a href="#" class="menu"><i class="fa fa-bars"></i></a></li>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="https://github.com/lumios">GitHub</a></li>
+					<li class="brand"><a>Lumios</a></li>
                 </ul>
 
                 <ul class="right">
-                    <li><a href="https://twitter.com/lumios_ga"><i class="fa fa-twitter fa-fw" style="font-size:16px"></i></a></li>
+					<li><a href="#">Home</a></li>
+					<li class="dropdown">
+						<a href="#" class="dropdownitem">Projects ▾</a>
+						<ul>
+							<li><a href="#">EEW</a></li>
+							<li><a href="#">Caramel</a></li>
+						</ul>
+					</li>
+                    <li><a href="https://github.com/lumios">GitHub</a></li>
                 </ul>
             </div>
         </nav>
     </header>
 
-    <div class="block title">
+    <div class="block-title">
         <div align="center">
-            <img src="assets/img/Bulb-2.svg" height=250px width=250px>
+			<img src="Lumios-Bulb-2.svg" height="250px" width="250px">
         </div>
     </div>
 
     <div class="container">
-        <div class="row item-1">
-            <a href="http://github.com/lumios/eew">
-                <div class="box col-4">
-                    <div align="center">
-                        <img src="assets/img/eew.svg" height="110px" width="110px" class="logo">
-                    </div>
-                </div>
-                <div class="box col-8">
-                    <h4>Earthquake Early Warning</h4>
-                    <h6>Get Notified of an Earthquake the moment it happens, by receiving Earthquake Early Warnings on your computer.</h6>
-                    <p class="honcol">Be Prepared for an Earthquake, with EEW. Being notified of an Earthquake before it hits*, can save your life. Having even a 5 second warning can give you the chance to prepare an escape route, turn off your stove, get away from tall furniture, and hide under a stable object.</p>
-                </div>
-            </a>
-        </div>
-        <div class="row item-2">
-            <a href="http://github.com/lumios/caramel">
-                <div class="box col-4">
-                    <div align="center">
-                        <img src="assets/img/caramel.svg" height="110px" width="110px" class="logo">
-                    </div>
-                </div>
-                <div class="box col-8">
-                    <h4>Caramel</h4>
-                    <h6>A Simple, Modern, Responsive Website Framework.</h6>
-                    <p class="honcol">Caramel is a simple, modern, responsive website framework. Caramel is fully responsive, meaning you only need to write code once, to have the same results across multiple platforms.</p>
-                </div>
-            </a>
-        </div>
+		Stuff
     </div>
 
     <footer>

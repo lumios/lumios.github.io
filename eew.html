@@ -11,92 +11,7 @@
 	    <script src="assets/js/jquery-2.1.3.min.js"></script>
 	    <script src="assets/js/caramel.js"></script>
 		<link href="assets/css/caramel.min.css" rel="stylesheet" type="text/css">
-
-		<style>
-			.header .nav {
-				border: none;
-			}
-
-			.block-title {
-				padding: 75px 0;
-				margin-bottom: 5px;
-			    border-bottom: 4px solid #f2f2f2;
-			}
-
-			.eew {
-				background-color: #E4524A;
-				color: white;
-			}
-
-			.lumios {
-				background-color: rgb(131, 213, 237);
-				color: white;
-			}
-
-			.brand {
-				font-size: 18px;
-			}
-
-			.brand a {
-				padding: 12px 24px 0 !important;
-			}
-
-			.brand a:hover {
-				background: white !important;
-			}
-
-			.nav a {
-				padding: 14px 18px;
-			}
-
-			.lang a {
-				padding: 16px 18px 12px !important;
-			}
-
-			.card {
-				margin: 35px 20px;
-			}
-
-			@media (max-width: 800px) {
-				.brand {
-					visibility: hidden;
-					display: none;
-					height: 0px !important;
-				}
-
-			    .nav .container {
-			        padding: 0;
-			    }
-
-				.card {
-					margin: 35px 0;
-				}
-
-				td {
-					display: block;
-				}
-
-				img {
-					max-width: 100%;
-				}
-			}
-
-			.card-2 {
-				padding: 15px 0;
-			}
-
-			.card-2 .fa {
-				font-size: 34px;
-			}
-
-			footer {
-			    font-size: 16px;
-			    padding: 15px 0 0;
-			    text-align: center;
-			    border-top: 4px solid #f2f2f2;
-				margin: 20px 0 0;
-			}
-		</style>
+		<link href="assets/css/style.css" rel="stylesheet" type="text/css">
 	</head>
 <body>
     <header class="header fixed">
@@ -148,7 +63,7 @@
 			</div>
 
 			<div class="box col-4 card-2">
-				<h5>Save Your Life</h5><br>
+				<h5>Be Safe</h5><br>
 				<i class="fa fa-heart-o"></i>
 			</div>
 		</div>
@@ -160,7 +75,11 @@
 				<tr>
 					<td>
 						<h4>Get Notified</h4>
-						<p>When an Earthquake occurs in Japan, the program will trigger a notification, and will play a chime to get your attention. The combination of the notification and chime are benificial to grabbing the user's attention. The notification provides basic information about the Earthquake, and the chime is there to alert you of the Notification &amp; Earthquake.</p>
+						<p>The moment an Earthquake occurs, our program triggers an alert.
+							A notification, that displays basic information, such as where the earthquake occurred,
+							the size of the earthquake, and the maximum estimated seismic intensity.
+							The map, which pops up a window, that shows you on a map the exact point the earthquake occurred.
+							By showing you the map, you'll be able to judge how far the Earthquake is away from your position.</p>
 					</td>
 					<td>
 						<div align="center"><img src="assets/img/eew-notif.png" style="margin-top:20px;"></div>
@@ -176,23 +95,25 @@
 				<tr>
 					<td>
 						<div align="center">
-							<img src="assets/img/eew-map.png" width="420px" height="475px" style="margin-top:20px;"><br>
-							<div style="margin-top:-28px"><sup>Map only available with Pro Version (Coming Soon)</sup></div>
+							<img src="assets/img/eew-map.png" width="420px" height="445px" style="margin-top:20px;"><br>
 						</div>
 					</td>
 					<td>
 						<h4>What to do</h4>
+						<p>You've just received an Earthquake Early Warning. Now what?</p>
+
 						<ul>
-							<p>You've just received an Earthquake Early Warning. Now what?</p>
 							<li>Don't panic.</li>
-							<p>Creating panic will make the situation worse, and can lead to injury.</p>
-							<li>Determine if you are near the Epicenter of the Earthquake.</li>
-							<p>If you don't live in an area that is near the Earthquake's Epicenter, you should be fine. If the Epicenter is near you, or you think the Earthquake may affect your area,</p>
-							<li>Move away from tall furniture, or anything that could possibly falling on you.</li>
-							<li>Open a door or window.</li>
-							<p>Incase their frames become buckled in the quake and you are unable to escape.</p>
-							<li>Hide under a table, or sit on the floor in a hurder position with your hands rested on your head.</li>
-							<p>Patiently wait for the Earthquake to pass.</p>
+							<p>Creating a state of panic can make you stressed, and prone to make mistakes.</p>
+
+							<li>Determine your location.</li>
+							<p>Determine if you are in a location that is close to the Earthquake's Epicenter.<br>
+								The size of the Earthquake can determine the radius that will be affected by the Earthquake.</p>
+
+							<li>Ensure your safety.</li>
+							<p>Move away from tall furniture and wall items, or anything that could possibly fall onto you.<br>
+								If you are cooking, turn off your gas stove immediately. Open a Window or Door, to ensure an escape route incase the door/window frame becomes buckled in the quake.<br>
+								Hide under a table, or sit on the floor in a hurdle position with your hands rested on your head, and wait for the Earthquake to pass.</p>
 						</ul>
 					</td>
 				</tr>
@@ -202,10 +123,6 @@
 		<hr>
 
 		<div class="row" style="text-align: center">
-			<div align="right">
-				<sup>Pro Version Coming Soon</sup>
-			</div>
-
 			<div class="box col-4 card-2">
 				<h5>Windows 7+</h5><br>
 				<i class="fa fa-windows"></i><br><br><br>
@@ -224,6 +141,22 @@
 				<i class="fa fa-linux"></i><br><br><br>
 				<button class="btn sml clean">32-bit</button>
 				<button class="btn sml clean">64-bit</button>
+			</div>
+		</div>
+
+		<hr>
+
+		<div class="row">
+			<div class="box col-12">
+				<h4>Support</h4>
+				<p>As we are a company with limited employees, we unfortunately do not offer a customer support centre.
+					If you have a question, inquiry, or need help with any of our programs or applications,
+					please send an email to <a href="mailto:support@lumios.xyz">support@lumios.xyz</a>,
+					and one of our developers will try to get in touch with you as soon as they can.<br>
+
+					Please note that sometimes we will get flooded with emails,
+					so responding to your email can sometimes take more than a week.
+					We apologise for this inconvenience.</p>
 			</div>
 		</div>
     </div>

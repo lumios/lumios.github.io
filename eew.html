@@ -7,11 +7,33 @@
 
 	    <link rel="apple-touch-icon" href="assets/img/app-icon.png">
 	    <link rel="icon" type="image/x-icon" href="favicon.ico">
+		<link href="assets/css/caramel.min.css" rel="stylesheet" type="text/css">
+		<link href="assets/css/style.css" rel="stylesheet" type="text/css">
 
 	    <script src="assets/js/jquery-2.1.3.min.js"></script>
 	    <script src="assets/js/caramel.js"></script>
-		<link href="assets/css/caramel.min.css" rel="stylesheet" type="text/css">
-		<link href="assets/css/style.css" rel="stylesheet" type="text/css">
+		<!--<script src="assets/js/core.js"></script>-->
+		<script>
+			var user_os = "Unknown";
+			var user_ico = "question";
+
+			if (navigator.appVersion.indexOf("Win") !=-1) {
+			    user_os = "Windows";
+			    user_ico = "windows";
+			}
+			else if (navigator.appVersion.indexOf("Mac") !=-1) {
+			    user_os = "Mac OS X";
+			    user_ico = "apple";
+			}
+
+			else if (navigator.appVersion.indexOf("X11") !=-1 || navigator.appVersion.indexOf("Linux") !=-1) {
+			    user_os = "Linux";
+			    user_ico = "linux";
+			}
+
+			document.getElementById("osname").textContent = user_os;
+			document.getElementById("osicon").className = "fa fa-fw fa-" + user_ico;
+		</script>
 	</head>
 <body>
     <header class="header fixed">
@@ -45,9 +67,29 @@
     </header>
 
     <div class="block-title eew">
-        <div align="center">
-			<img src="assets/img/EEW-Seismic-1.svg" height="250px" width="250px">
-        </div>
+		<div class="container">
+			<div class="row">
+				<div class="box col-6">
+					<div class="eew-logo" align="right" style="padding-right:20px">
+						<img src="assets/img/EEW-Seismic-1.svg" height="250px" width="250px">
+					</div>
+				</div>
+				<div class="box col-6">
+					<div style="padding:20px 0 0 20px;">
+						<h5>Download</h5>
+						<div id="download">
+							<i id="osicon" style="font-size:20px;"></i>
+							<span id="osname" style="font-size:20px;"></span>
+
+							<br>
+
+							<a href="" class="btn sml white clean">32-bit</a>
+							<a href="" class="btn sml white clean">64-bit</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
     </div>
 
     <div class="container">
@@ -137,7 +179,7 @@
 			</div>
 
 			<div class="box col-4 card-2">
-				<h5>Linux</h5><br>
+				<h5>Linux (Ubuntu)</h5><br>
 				<i class="fa fa-linux"></i><br><br><br>
 				<button class="btn sml clean">32-bit</button>
 				<button class="btn sml clean">64-bit</button>

@@ -6,13 +6,67 @@ body {
     border: none;
 }
 
-.block-title {
-    padding: 80px 0;
-    margin-bottom: 5px;
-    border-bottom: 4px solid #f2f2f2;
+.nav a {
+    padding: 14px 18px;
 }
 
-.eew {
+.nav .brand {
+    font-size: 18px;
+}
+
+.nav .brand a {
+    padding: 12px 24px 0 !important;
+}
+
+.nav .brand a:hover {
+    background: white !important;
+}
+
+.nav .lang a {
+    padding: 16px 18px 12px !important;
+}
+
+.eew-block {
+    padding: 80px 0;
+    margin-bottom: 5px;
+    border-bottom: 4px solid #F2F2F2;
+    background-color: #E4524A;
+    color: white;
+}
+
+.eew-cards {
+    text-align: center;
+}
+
+.card {
+    padding: 15px 0;
+}
+
+.card .fa {
+    font-size: 34px;
+}
+
+.eew-info {
+
+}
+
+.eew-info li {
+    font-weight: bold;
+}
+
+.eew-showcase-img {
+    margin-top: 20px;
+}
+
+.eew-downloads {
+    text-align: center;
+}
+
+.eew-support {
+
+}
+
+.eew-footer {
     background-color: #E4524A;
     color: white;
 }
@@ -22,32 +76,24 @@ body {
     color: white;
 }
 
-.brand {
-    font-size: 18px;
+.btn.white,
+.btn.white:hover,
+.btn.white:active,
+.btn.white:focus {
+    border-color: white;
+    color: white;
 }
 
-.brand a {
-    padding: 12px 24px 0 !important;
-}
-
-.brand a:hover {
-    background: white !important;
-}
-
-.nav a {
-    padding: 14px 18px;
-}
-
-.lang a {
-    padding: 16px 18px 12px !important;
-}
-
-.card {
-    margin: 35px 20px;
+footer {
+    font-size: 16px;
+    padding: 15px 0 0;
+    text-align: center;
+    border-top: 4px solid #f2f2f2;
+    margin: 20px 0 0;
 }
 
 @media (max-width: 800px) {
-    .brand {
+    .nav .brand {
         visibility: hidden;
         display: none;
         height: 0px !important;
@@ -61,36 +107,15 @@ body {
         margin: 35px 0;
     }
 
-    td {
+    .eew-info td {
         display: block;
     }
 
     img {
         max-width: 100%;
     }
-}
 
-.card-2 {
-    padding: 15px 0;
-}
-
-.card-2 .fa {
-    font-size: 34px;
-}
-
-li {
-    font-weight: bold;
-}
-
-.btn.white {
-    border-color: white;
-    color: white;
-}
-
-footer {
-    font-size: 16px;
-    padding: 15px 0 0;
-    text-align: center;
-    border-top: 4px solid #f2f2f2;
-    margin: 20px 0 0;
+    footer {
+        padding-bottom: 8px;
+    }
 }

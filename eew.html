@@ -12,28 +12,7 @@
 
 	    <script src="assets/js/jquery-2.1.3.min.js"></script>
 	    <script src="assets/js/caramel.js"></script>
-		<!--<script src="assets/js/core.js"></script>-->
-		<script>
-			var user_os = "Unknown";
-			var user_ico = "question";
-
-			if (navigator.appVersion.indexOf("Win") !=-1) {
-			    user_os = "Windows";
-			    user_ico = "windows";
-			}
-			else if (navigator.appVersion.indexOf("Mac") !=-1) {
-			    user_os = "Mac OS X";
-			    user_ico = "apple";
-			}
-
-			else if (navigator.appVersion.indexOf("X11") !=-1 || navigator.appVersion.indexOf("Linux") !=-1) {
-			    user_os = "Linux";
-			    user_ico = "linux";
-			}
-
-			document.getElementById("osname").textContent = user_os;
-			document.getElementById("osicon").className = "fa fa-fw fa-" + user_ico;
-		</script>
+		<script src="assets/js/core.js"></script>
 	</head>
 <body>
     <header class="header fixed">
@@ -68,26 +47,8 @@
 
     <div class="block-title eew">
 		<div class="container">
-			<div class="row">
-				<div class="box col-6">
-					<div class="eew-logo" align="right" style="padding-right:20px">
-						<img src="assets/img/EEW-Seismic-1.svg" height="250px" width="250px">
-					</div>
-				</div>
-				<div class="box col-6">
-					<div style="padding:20px 0 0 20px;">
-						<h5>Download</h5>
-						<div id="download">
-							<i id="osicon" style="font-size:20px;"></i>
-							<span id="osname" style="font-size:20px;"></span>
-
-							<br>
-
-							<a href="" class="btn sml white clean">32-bit</a>
-							<a href="" class="btn sml white clean">64-bit</a>
-						</div>
-					</div>
-				</div>
+			<div class="eew-logo" align="center">
+				<img src="assets/img/EEW-Seismic-1.svg" height="250px" width="250px">
 			</div>
 		</div>
     </div>

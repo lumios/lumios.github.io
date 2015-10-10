@@ -2,6 +2,10 @@ body {
     font-family: "Helvetica", "Verdana", "Arial", sans-serif;
 }
 
+.lumios-bg {
+    background-color: rgb(131, 213, 237);
+}
+
 .header .nav {
     border: none;
 }
@@ -15,7 +19,7 @@ body {
 }
 
 .nav .brand a {
-    padding: 12px 24px 0 !important;
+    padding: 11px 24px 0 !important;
 }
 
 .nav .brand a:hover {
@@ -68,6 +72,12 @@ body {
 
 .eew-footer {
     background-color: #E4524A;
+    color: white;
+}
+
+.lumios-block {
+    height: 100%;
+    background-color: rgb(131, 213, 237);
     color: white;
 }
 
